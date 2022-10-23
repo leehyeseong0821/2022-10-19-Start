@@ -23,10 +23,5 @@ homebutton.onclick = () => {
     location.href="/account/leftmain";
 }
 
-const signbutton= document.querySelector(".sign-res");
-
-signbutton.onclick = () =>{
-    location.href="/account/register";
-}
 
 

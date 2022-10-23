@@ -1,66 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쇼핑몰 혼자서 개발하기</title>
+    <link rel="stylesheet" href="/static/css/leftmain.css">
     <link rel="stylesheet" href="/static/css/login.css">
-    <title>Login</title>
 </head>
 <body>
-    <div id="main-login">
-        <h1 style="text-align: center;">MEMBER LOGIN</h1>
-        <div id="login-title">
+    <div id="container">
+        <div id="leftbar">
+            <a class="logo-top">STYLE LISH</a>
+        <div class="left_login">
+            <a class="login-us">Login</a>
+            <a class="join-us">JOIN US</a><br>
+            <a href="#CART(0items)">CART (0items)</a>
+            <a href="https://service.epost.go.kr/iservice/usr/trace/usrtrc001k01.jsp">WISH</a>
+            <a href="#ORDER">ORDER</a>
+            <a href="#MY PAGE">MY PAGE</a>
         </div>
-            <div class="login">
-                <br>
-                <h2 style="text-align: center;">회원 로그인</h2>
-                <br>
-                <fieldset>
-                <label class="id_ePlaceholder" title="아이디">
-                <input id="member_id" name="member_id" placeholder="아이디" value type="text"></label>
-                <label class="pw_ePlaceholder" title="비밀번호">
-                <input id="member_pw" name="member_pw" placeholder="비밀번호" value type="password"></label>
-                <button type="submit" class="login_button" onclick="MemberAction.login"><font color="white" size="5em">LOGIN</font></button>
-                <br>
-                
-                <input id="member_check_save_id" name="check_save_id" type="checkbox">
-                <label for="member_check_save_id">아이디 저장</label><br><br>
-                <ul>
-                    <li>
-                        <a href="" class="find_id_pw">아이디 찾기</a></li>
-                    <li>
-                        <a href="" class="find_id_pw">비밀번호 찾기</a></li>
+        <div class="search"><!-- 검색창  -->
+            <input class="search-put"type="text" placeholder=" 검색어 입력">
+            <button type="button">
+            <img class="imagesearch"src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png">
+            </button>
+        </div>
+        <div id="category">
+            <div class="position">  
+                <ul class="left-list">
+                <li class="list">
+                    <a href="WEEK BEST">WEEK BEST</a>
+                </li>
+                <li class="list">
+                    <a href="OUTER">OUTER</a>
+                </li>
+                <li class="list">
+                    <a href="OUTER">TOP</a>
+                </li>
+                <li class="list">
+                    <a href="OUTER">KNIT</a>
+                </li>
+                <li class="list">
+                    <a href="OUTER">SHIRTS</a>
+                </li>
+                <li class="list">
+                    <a href="OUTER">PANTS</a>
+                </li>
+                <li class="list">
+                    <a href="OUTER">SHOES&BAG</a>
+                </li>
+                <li class="list">
+                    <a href="OUTER">ACC</a>
+                </li>
+                <li class="list">
+                    <a href="OUTER" >DAILY LIFE</a>
+                </li>
+                <li class="list">
+                    <a href="OUTER">LAST ITEM</a>
+                </li>
+            </ul>
+                <ul class="right-list">
+                <li class="list">
+                    <a class="list-a">NOTICE</a>
+                </li>
+                <li class="list">
+                    <a href="OUTER">Q / A</a>
+                </li>
+                <li class="list">
+                    <a href="OUTER">REVIEW</a>
+                </li>
+                <li class="list">
+                    <a href="OUTER">PEOPLE THINK</a>
+                </li>
+                <li class="list">
+                    <a href="OUTER">FACEBOOK</a>
+                </li>
+                <li class="list">
+                    <a href="OUTER">INSTAGRAM</a>
+                </li>
                 </ul>
-                <ul class="sns">
-                    <li class>
-                        <a href="" onclick="MemberAction.snslogin(naver)">
-                        <img src="https://img.echosting.cafe24.com/design/module/member/login/3374/btn_naver_login.gif" alt="네이버 로그인"style="margin-right:10px;">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" onclick="MemberAction.snslogin(facebook)">
-                        <img src="https://img.echosting.cafe24.com/design/module/member/login/3374/btn_facebook_login.gif" alt="페이스북 로그인" style="margin-left:10px;">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" onclick="MemberAction.snslogin(kakao)">
-                        <img src="https://img.echosting.cafe24.com/design/module/member/login/3374/btn_kakao_login.gif" alt="카카오 로그인" style="margin-left:20px;">
-                        </a>
-                    </li>
-                </ul>
-                <hr class="hr1">
-                <h2 style="text-align:center;">J O I N</h2>
-                <h3>아직도 회원이 아니세요?</h3>
-                <p class="sign_in_text">
-                    회원가입을 하시면 다양하고 특별한 혜택이 기다리고 있습니다.
-                </p>
-                <a class="sign-res">회원가입</a>
-            </fieldset>
             </div>
+        </div>
+        <div class="left_info">
+            <span class="info_call">T. 051-123-1234</span>
+            <span class="info_day">MONDAY TO FRIDAY . AM 11:00 - PM 06:00</span>
+            <span class="info_Time">LUNCH TIME . PM 12:00 - PM 13:00</span>
+            <spna class="info_rest">SAT.SUN.HOLIDAY</spna>
+            <a class="rest">OFF</a>
+        </div>
+            <span class="bank">BANK INFO</span>
+            <span class="bank_go">국민 123456-78-9101112</span>
+            <span class="bank_go">주식회사 STYLE LISH</span>
+            
+            <div class="bottom_view">
+                <a>
+                 TODAY VIEW
+                </a>
+                <div class="player">
+                    <span class="prev">◀</span>
+                    <span class="prev">▶</span>
+                </div>
+                <ul>
+                    <li class="bottom_imges">
+                        <image class="bottom_image"src="/static/images/image3.jpg"></image>
+                    </li>
+                    <li class="bottom_imges">
+                        <image class="bottom_image"src="/static/images/image4.jpg"></image>
+                    </li>
+                    <li class="bottom_imges">
+                        <image class="bottom_image"src="/static/images/image5.jpg"></image>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="header">
+            <div class="inner">
+                <div class="statelog">
+                    <a href="/account/leftmain">home</a>
+                    <a href="/account/login">login</a>
+                    <a href="/account/register">joinus</a>
+                    <a href="/account/notice">notice</a>
+                </div>
+            </div>
+        </div>
+        <div id="contents">
+            <div class="login">
+                
+                <fieldlist>
+                    <a class="a-main">회원 로그인</a>
+                    <label class="id"><span>ID</span><br>
+                        <input id="member_id" placeholder="아이디" type="text" required></label>
+                    <label class="password"><span>PASSWORD</span><br>
+                        <input id="member_password" placeholder="비밀번호" value="" type="password" required></label>
+                    <a class="login-box"href="#none">LOGIN</a>
+                    <ul>
+                        <li><a href="">아이디 찾기</a></li>
+                        <li><a href="">비밀번호 찾기</a></li>
+                        <li><a href="/account/register">회원가입</a></li>
+                    </ul>
+                     <div class="snsArea">
+                        
+                            <a href="" onclick="MemberAction.snslogin(naver)">
+                            <img src="https://img.echosting.cafe24.com/design/module/member/login/3374/btn_naver_login.gif" alt="네이버 로그인"style="margin-right:10px;">
+                            </a>
+                       
+                     
+                            <a href="" onclick="MemberAction.snslogin(facebook)">
+                            <img src="https://img.echosting.cafe24.com/design/module/member/login/3374/btn_facebook_login.gif" alt="페이스북 로그인" style="margin-left:10px;">
+                            </a>
+                        
+                     
+                            <a href="" onclick="MemberAction.snslogin(kakao)">
+                            <img src="https://img.echosting.cafe24.com/design/module/member/login/3374/btn_kakao_login.gif" alt="카카오 로그인" style="margin-left:20px;">
+                            </a>
+                        </div>
+                    
         
-    </div>
+            
+                </fieldlist>
+        </div>
+        </div>
     
+
+
+        </div>
+    </div>
 </body>
 <script src="/static/js/mainnotice.js"></script>
 </html>
