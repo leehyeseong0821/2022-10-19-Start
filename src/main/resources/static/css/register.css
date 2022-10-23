@@ -231,12 +231,91 @@ h3{
     text-align: right;
 }
 .register-b{
+    position: relative;
+    margin: 10px ;
+   
+}
+.register-b tbody th{
+    padding: 20px 0;
+    color: #353535;
+    text-align: left;
+    font-weight: normal;
+    font-size: 12px;
     border-top: 1px solid #ebebeb;
     border-bottom: 1px solid #ebebeb;
-    position: relative;
-    margin: 10px 0 0;
+    
 }
-.asdf{
-    color: red;
-   
+.register-b tbody td{
+    color: #353535;
+   font-size: 11px; 
+   border-top: 1px solid #ebebeb;
+   border-bottom: 1px solid #ebebeb;
+}
+#member_id {
+    padding: 2px 4px;
+    border: 1px solid #ebebeb;
+    color: #5c5c5c;
+    font-size: 12px;
+}
+#member_password{
+    padding: 2px 4px;
+    border: 1px solid #ebebeb;
+    color: #5c5c5c;
+    font-size: 12px;
+}
+#select_member{
+    width:300px;
+    border: 1px solid #ebebeb;
+    font-size: 12px;
+    color: #5c5c5c;
+}
+#postcode1{
+    width: 50px;
+    border: 1px solid #ebebeb;
+    font-size: 12px;
+    color: #5c5c5c;
+    margin-bottom: 7px;
+}
+#postcode2{
+    padding: 2px 4px;
+    border: 1px solid #ebebeb;
+    color: #5c5c5c;
+    font-size: 12px;
+    margin-bottom: 7px;
+}
+#postcode3{
+    padding: 2px 4px;
+    border: 1px solid #ebebeb;
+    color: #5c5c5c;
+    font-size: 12px;
+    margin-bottom: 7px;
+}
+#phone1{
+    width: 70px;
+    padding: 2px 4px;
+    border: 1px solid #ebebeb;
+    color: #5c5c5c;
+    font-size: 12px;
+}
+#email{
+    width: 70px;
+    padding: 2px 4px;
+    border: 1px solid #ebebeb;
+    color: #5c5c5c;
+    font-size: 12px;
+}
+#email-name{
+    width: 100px;
+    padding: 2px 4px;
+    border: 1px solid #ebebeb;
+    color: #5c5c5c;
+    font-size: 12px;
+    
+}
+.ship-button{
+    margin-top: 20px;
+    width: 100px;
+    height: 50px;
+    background-color: black;
+    color: white;
 }

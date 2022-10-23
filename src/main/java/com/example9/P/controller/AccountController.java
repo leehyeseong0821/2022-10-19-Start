@@ -16,6 +16,10 @@ public class AccountController {
 
         return "account/notice";
     }
+    @GetMapping("account/register")
+    public String register(){
+        return "account/register";
+    }
     @GetMapping("account/login")
     public String login(){
         return "account/login";

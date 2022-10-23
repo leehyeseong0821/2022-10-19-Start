@@ -101,7 +101,19 @@ ul{
     margin: 0px;
     list-style: none;
 }
+.login-us{
+    cursor: pointer;
+}
+.logo-top{
+    cursor: pointer;
+}
 .list-a{
+    cursor: pointer;
+}
+.join-us{
+    cursor: pointer;
+}
+#homegoing{
     cursor: pointer;
 }
 .left_info {

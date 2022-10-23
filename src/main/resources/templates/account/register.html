@@ -5,15 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>쇼핑몰 혼자서 개발하기</title>
+    <link rel="stylesheet" href="/static/css/leftmain.css">
     <link rel="stylesheet" href="/static/css/register.css">
 </head>
 <body>
     <div id="container">
         <div id="leftbar">
-            <a class="logo-top"href="#STYLE LISH">STYLE LISH</a>
+            <a class="logo-top">STYLE LISH</a>
         <div class="left_login">
-            <a href="#login">Login</a>
-            <a href="#JOINUS">JOIN US</a><br>
+            <a class="login-us">Login</a>
+            <a class="join-us">JOIN US</a><br>
             <a href="#CART(0items)">CART (0items)</a>
             <a href="https://service.epost.go.kr/iservice/usr/trace/usrtrc001k01.jsp">WISH</a>
             <a href="#ORDER">ORDER</a>
@@ -117,13 +118,13 @@
             <div class="path">
             <ol>
                 <li>
-                    <a href="HOME">HOME</a>
+                    <a href="/account/leftmain">HOME</a>
                 </li>
                 <li>
                     <a>></a>
                 </li>
                 <li>
-                    <a href="MEMBERSHIP">MEMBERSHIP</a>
+                    <a href="/account/register">MEMBERSHIP</a>
                 </li>
             </ol>
         </div>
@@ -151,25 +152,156 @@
             <h3>기본정보</h3>
             <p class="required">필수입력사항</p>
             <div class="register-b">
-                <table class="asdf">sdsd</table>
-                  
-
-                
-
-
-
-
+                <table>
+                    <colgroup>
+                        <col class ="col-style">    
+                    </colgroup>     
+                <tbody>
+                    <tr>
+                        <th scope="row">
+                           아이디 
+                        </th>           
+                    <td>
+                        <input id="member_id" type="text">
+                        <span>(영문소문자/숫자, 4~16자)</span>
+                    </td>
+                    </tr>
+                    <tr>
+                    <th scope="row">
+                        비밀번호
+                    </th>
+                    <td>
+                        <input id="member_password" type="text">
+                        <span>(영문 대소문자/숫자 4자~16자)</span>
+                    </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            비밀번호확인
+                        </th>
+                    <td>
+                        <input id="member_password" type="text">  
+                    </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            비밀번호 확인 질문
+                        </th>
+                        <td>
+                            <select id="select_member">
+                                <option value="hint_01">기억에 남는 추억의 장소는?</option>
+                                <option value="hint_02">자신의 인생 좌우명은?</option>
+                                <option value="hint_03">자신의 보물 제1호는?</option>
+                                <option value="hint_04">가장 기억에 남는 선생님 성함은?</option>
+                                <option value="hint_05">타인이 모르는 자신만의 신체비밀이 있다면?</option>
+                                <option value="hint_06">추억하고 싶은 날짜가 있다면?</option>
+                                <option value="hint_07">받았던 선물 중 기억에 남는 독특한 선물은?</option>
+                                <option value="hint_08">유년시절 가장 생각나는 친구 이름은?</option>
+                                <option value="hint_09">인상 깊게 읽은 책 이름은?</option>
+                                <option value="hint_10">읽은 책 중에서 좋아하는 구절이 있다면?</option>
+                                <option value="hint_11">자신이 두번째로 존경하는 인물은?</option>
+                                <option value="hint_12">친구들에게 공개하지 않은 어릴 적 별명이 있다면?</option>
+                                <option value="hint_13">초등학교 때 기억에 남는 짝꿍 이름은?</option>
+                                <option value="hint_14">다시 태어나면 되고 싶은 것은?</option>
+                                <option value="hint_15">내가 좋아하는 캐릭터는?</option>
+                                </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                           비밀번호 확인 답변 
+                        </th>
+                        <td>
+                            <input id="member_password" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            이름
+                        </th>
+                        <td>
+                            <input id="member_password" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            주소
+                    </th>
+                        <td>
+                            <input id="postcode1" type="text">
+                            <span class="bt_xsmall"><a href="#none">우편번호</a></span><br>
+                            <input id="postcode2" type="text">
+                            <span class="bt_xsmall">기본주소</span><br>
+                            <input id="postcode3" type="text">
+                            <span class="bt_xsmall"></span>나머지주소(선택입력가능)
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            일반전화
+                        </th>
+                        <td>
+                            <select id="phone1">
+                                <option value="02">02</option>
+                                <option value="031">031</option>
+                                <option value="032">032</option>
+                                <option value="033">033</option>
+                                <option value="041">041</option>
+                                <option value="042">042</option>
+                                <option value="043">043</option>
+                                <option value="044">044</option>
+                                <option value="051">051</option>
+                                <option value="052">052</option>
+                                <option value="053">053</option>
+                                <option value="054">054</option>
+                                <option value="055">055</option>
+                                <option value="061">061</option>
+                                <option value="062">062</option>
+                                <option value="063">063</option>
+                                <option value="064">064</option>
+                                <option value="070">070</option>
+                                <option value="010">010</option>
+                                </select>-
+                                <input id="phone1"   type="text">-
+                                <input id="phone1"   type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                    <th scope="row">
+                        휴대전화
+                    </th>
+                    <td>
+                        <select id="phone1">
+                            <option value="010">010</option>    
+                            <option value="011">011</option>    
+                            <option value="016">016</option>    
+                            <option value="017">017</option>    
+                            <option value="018">018</option>    
+                            <option value="019">019</option> 
+                        </select>-
+                                <input id="phone1"   type="text">-
+                                <input id="phone1"   type="text">
+                    </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            이메일
+                        </th>
+                    <td>
+                        <input id="email"> @
+                        <select id="email-name">
+                            <option value="010">naver.com</option>    
+                            <option value="010">daum.net</option>    
+                            <option value="010">google.com</option>    
+                        </select>
+                    </td>
+                    </tr>
+                </tbody>
+                </table>
+                <div member-ship>
+                    <button class="ship-button" type="button">회원가입
+                </div>
             </div>
-        
-   
-         
-
-
-        </div>
-
-
-        </div>
-    </div>
 </body>
 <script src="/static/js/mainnotice.js"></script>
 </html>
